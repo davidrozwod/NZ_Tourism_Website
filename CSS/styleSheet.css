@@ -1,0 +1,233 @@
+﻿/*Body Config*/
+body {
+ background-color:black;
+ margin: 0 auto;
+}
+
+/*Font Config*/
+p, h1,h2 {
+    color: white;
+}
+.carousel-caption > p, .carousel-caption > h5 {
+    display: inline-block;
+    color: white;
+    background: rgba(25, 25, 25, .5);
+}
+.modal-header > h5{
+    color:black;
+}
+
+h2 {
+    text-align: center;
+}
+modal-body,p{
+    color:black;
+}
+carousel-caption,p{
+    color:white;
+}
+
+/*Font Sizes*/
+h1 {
+    text-align: center;
+    font-size: 48px;
+}
+.carousel-caption > h5 {
+    font-size: 36px;
+}
+p, h2 {
+    text-align: center;
+    font-size: 24px;
+}
+
+/*Group styling*/
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+li{
+    float:left;
+}
+li a{
+    display:block;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+li a:hover{
+    text-decoration:unset;
+}
+
+/*Navbar text*/
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+}
+
+/*Carousel Image Sizing*/
+.carousel-inner img {
+    display: block;
+    object-fit: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+/*Carousel Fade Effects*/
+.carousel.carousel-fade .carousel-item {
+    display: block;
+    opacity: 0;
+    transition: opacity ease-out .9s;
+}
+
+.carousel.carousel-fade .carousel-item.active {
+    opacity: 1 !important;
+}
+
+/*Div Layering*/
+.carousel {
+    z-index: -1;
+    position: absolute;
+}
+.container-fluid {
+    z-index: 1;
+    position: absolute;
+}
+.navbar {
+    z-index: 2;
+    position: absolute;
+}
+.modal {
+    z-index: 4;
+    max-height: 320px;
+    margin-top: 15%;
+    overflow: hidden !important;
+}
+
+.modal2 {
+    z-index: 5;
+    padding-top:100px;
+    overflow: visible;
+}
+.modal3 {
+    z-index: 5;
+    padding-top: 120px;
+    overflow: visible;
+}
+
+/*Title positions*/
+.modal-title{
+    margin-left:39%
+}
+
+#events {
+    height:450px;
+    width:100%
+}
+
+
+/*Hyperlink Styling*/
+a:link {
+    color: white;
+    text-decoration:none;
+}
+
+a:visited {
+    color: white;
+}
+
+/*Drawing SVG Map*/
+.shapeMap {
+    fill: #7C7C7C;
+    stroke: #FFFFFF;
+    stroke-width: 1;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+/*Change Cursor Shape*/
+#groupMap{
+    cursor:pointer;
+}
+
+/*Change Region Colours*/
+#Manawatu-Wanganui:hover {
+    fill: firebrick;
+    opacity: 1;
+}
+
+#Gisborne-District:hover {
+    fill: aqua;
+    opacity: 1;
+}
+
+#Hawkes-Bay:hover {
+    fill: deeppink;
+    opacity: 1;
+}
+
+#Auckland:hover {
+    fill: darkslateblue;
+    opacity: 1;
+}
+
+
+#Bay-of-Plenty:hover {
+    fill: chartreuse;
+    opacity: 1;
+}
+
+#Canterbury:hover {
+    fill: orangered;
+    opacity: 1;
+}
+
+#Malborough-District:hover {
+    fill: turquoise;
+    opacity: 1;
+}
+
+#Nelson-City:hover {
+    fill: tomato;
+    opacity: 1;
+}
+
+#Tasman-District:hover {
+    fill: skyblue;
+    opacity: 1;
+}
+
+#Northland:hover {
+    fill: lightsalmon;
+    opacity: 1;
+}
+
+#Taranaki:hover {
+    fill: gold;
+    opacity: 1;
+}
+
+#West-Coast:hover {
+    fill: crimson;
+    opacity: 1;
+}
+
+#Otago:hover {
+    fill: brown;
+    opacity: 1;
+}
+
+#Southland:hover {
+    fill: teal;
+    opacity: 1;
+}
+
+#Waikato:hover {
+    fill: tan;
+    opacity: 1;
+}
+
+#Wellington:hover {
+    fill: lightcoral;
+    opacity: 1;
+}
