@@ -1,5 +1,16 @@
 {
+  
   "devDependencies": {
     "@vscode/vsce": "^2.18.0"
+    
+  },
+
+  
+  "scripts": {
+    "deploy": "vsce publish --yarn"
   }
 }
+  
+  
+
+
