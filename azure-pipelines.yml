@@ -4,10 +4,14 @@ trigger:
     - main
   tags:
     include:
-    - refs/tags/v*
+    - v*
 
 strategy:
   matrix:
+    linux:
+      imageName: 'ubuntu-latest'
+    mac:
+      imageName: 'macos-latest'
     windows:
       imageName: 'windows-latest'
 
@@ -18,15 +22,14 @@ steps:
 
 - task: NodeTool@0
   inputs:
-    versionSpec: '16.x'
+    versionSpec: '10.x'
   displayName: 'Install Node.js'
-
-
 
 - bash: |
     /usr/bin/Xvfb :99 -screen 0 1024x768x24 > /dev/null 2>&1 &
     echo ">>> Started xvfb"
   displayName: Start xvfb
+  condition: and(succeeded(), eq(variables['Agent.OS'], 'Linux'))
 
 - bash: |
     echo ">>> Compile vscode-test"
@@ -38,10 +41,3 @@ steps:
   displayName: Run Tests
   env:
     DISPLAY: ':99.0'
-
-- bash: |
-    echo ">>> Publish"
-    yarn deploy
-  displayName: Publish
-  env:
-    VSCE_PAT: $(VSCE_PAT)
