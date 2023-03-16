@@ -1,25 +1,14 @@
 {
-    "name": "some-application-name",
-    "author": "David Rozwod",
-    "email": "email",
-    "license": "UNLICENSED",
-    "version": "0.0.1",
-    "private": true,
-    
-  
-  
+  "name": "some-application-name",
+  "author": "David Rozwod",
+  "email": "email",
+  "license": "UNLICENSED",
+  "version": "0.0.1",
+  "private": true,
   "devDependencies": {
     "@vscode/vsce": "^2.18.0"
-    
   },
-
-  
   "scripts": {
     "deploy": "vsce publish --yarn"
   }
-  
 }
-  
-  
-
-
