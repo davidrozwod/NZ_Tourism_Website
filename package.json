@@ -1,7 +1,9 @@
 {
   
+  
   "devDependencies": {
-    "@vscode/vsce": "^2.18.0"
+    "@vscode/vsce": "^2.18.0",
+    "license": "UNLICENSED"
     
   },
 
@@ -9,6 +11,8 @@
   "scripts": {
     "deploy": "vsce publish --yarn"
   }
+
+  
 }
   
   
