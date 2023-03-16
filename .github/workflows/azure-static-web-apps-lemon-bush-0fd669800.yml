@@ -1,7 +1,5 @@
 ---
 name: Azure Static Web Apps CI/CD
-rules:
-new-lines: disable
 
 on:
   push:
@@ -33,6 +31,8 @@ jobs:
     if: github.event_name == 'push' || (github.event_name == 'pull_request' && github.event.action != 'closed')
     runs-on: ubuntu-latest
     needs: run-lint
+    rules:
+    new-lines: disable
     name: Build and Deploy Job
     steps:
       - uses: actions/checkout@v2
