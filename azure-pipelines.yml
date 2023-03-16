@@ -43,6 +43,5 @@ steps:
     echo ">>> Publish"
     yarn deploy
   displayName: Publish
-  condition: (startsWith(variables['Build.SourceBranch'], 'refs/tags/')
   env:
     VSCE_PAT: $(VSCE_PAT)
