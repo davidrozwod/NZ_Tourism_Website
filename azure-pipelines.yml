@@ -40,10 +40,10 @@ steps:
   env:
     DISPLAY: ':99.0'
 
-  - bash: |
+- bash: |
     echo ">>> Publish"
     yarn deploy
   displayName: Publish
-  condition: and(succeeded(), startsWith(variables['Build.SourceBranch'], 'refs/tags/'), eq(variables['Agent.OS']))
+  condition: and(succeeded(), startsWith(variables['Build.SourceBranch'], 'refs/tags/'), eq(variables['Agent.OS'], 'Linux'))
   env:
     VSCE_PAT: $(VSCE_PAT)
