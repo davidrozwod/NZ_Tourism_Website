@@ -3,9 +3,6 @@
   "author": "David Rozwod",
   "email": "email",
   "license": "UNLICENSED",
-  "engines": {
-    "node": ">=16.0.0"
-},
   "devDependencies": {
     "@vscode/vsce": "^2.18.0"
   },
