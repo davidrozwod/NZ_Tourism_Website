@@ -12,6 +12,8 @@
     "deploy": "vsce publish --yarn"
   },
   "dependencies": {
+    "@types/vscode": "^1.76.0",
+    "@vscode/test-electron": "^2.3.0",
     "yarn": "^1.22.19"
   }
 }
