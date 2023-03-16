@@ -1,4 +1,7 @@
+---
 name: Azure Static Web Apps CI/CD
+rules:
+new-lines: disable
 
 on:
   push:
