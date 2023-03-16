@@ -8,9 +8,6 @@
   "devDependencies": {
     "@vscode/vsce": "^2.18.0"
   },
-  "scripts": {
-    "deploy": "vsce publish --yarn"
-  },
   "dependencies": {
     "@types/vscode": "^1.76.0",
     "@vscode/test-electron": "^2.3.0",
