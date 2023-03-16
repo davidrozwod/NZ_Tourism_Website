@@ -10,5 +10,8 @@
   },
   "scripts": {
     "deploy": "vsce publish --yarn"
+  },
+  "dependencies": {
+    "yarn": "^1.22.19"
   }
 }
