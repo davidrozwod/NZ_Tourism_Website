@@ -4,11 +4,11 @@ name: Azure Static Web Apps CI/CD
 on:
   push:
     branches:
-      - main
+      - Development
   pull_request:
     types: [opened, synchronize, reopened, closed]
     branches:
-      - main
+      - Development
 
 jobs:
   run-lint:
@@ -23,7 +23,7 @@ jobs:
         uses: github/super-linter@v4
         env:
           VALIDATE_ALL_CODEBASE: false
-          DEFAULT_BRANCH: "main"
+          DEFAULT_BRANCH: "Development"
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           
   build_and_deploy_job:
