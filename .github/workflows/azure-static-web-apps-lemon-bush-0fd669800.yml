@@ -1,25 +1,15 @@
-<<<<<<<< HEAD:.github/workflows/azure-static-web-apps-lemon-bush-0fd669800.yml
 ---
 ========
->>>>>>>> Staging:.github/workflows/azure-static-web-apps-gentle-moss-0d6654900.yml
 name: Azure Static Web Apps CI/CD
 
 on:
   push:
     branches:
-<<<<<<<< HEAD:.github/workflows/azure-static-web-apps-lemon-bush-0fd669800.yml
       - main
   pull_request:
     types: [opened, synchronize, reopened, closed]
     branches:
       - main
-========
-      - Staging
-  pull_request:
-    types: [opened, synchronize, reopened, closed]
-    branches:
-      - Staging
->>>>>>>> Staging:.github/workflows/azure-static-web-apps-gentle-moss-0d6654900.yml
 
 jobs:
   run-lint:
@@ -34,17 +24,10 @@ jobs:
         uses: github/super-linter@v4
         env:
           VALIDATE_ALL_CODEBASE: false
-<<<<<<<< HEAD:.github/workflows/azure-static-web-apps-lemon-bush-0fd669800.yml
           DEFAULT_BRANCH: "main"
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           VALIDATE_YAML: false
-          
-========
-          DEFAULT_BRANCH: "Development"
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          VALIDATE_YAML: false
 
->>>>>>>> Staging:.github/workflows/azure-static-web-apps-gentle-moss-0d6654900.yml
   build_and_deploy_job:
     if: github.event_name == 'push' || (github.event_name == 'pull_request' && github.event.action != 'closed')
     runs-on: ubuntu-latest
@@ -58,11 +41,7 @@ jobs:
         id: builddeploy
         uses: Azure/static-web-apps-deploy@v1
         with:
-<<<<<<<< HEAD:.github/workflows/azure-static-web-apps-lemon-bush-0fd669800.yml
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_LEMON_BUSH_0FD669800 }}
-========
-          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_GENTLE_MOSS_0D6654900 }}
->>>>>>>> Staging:.github/workflows/azure-static-web-apps-gentle-moss-0d6654900.yml
           repo_token: ${{ secrets.GITHUB_TOKEN }} # Used for Github integrations (i.e. PR comments)
           action: "upload"
           ###### Repository/Build Configurations - These values can be configured to match your app requirements. ######
@@ -82,13 +61,5 @@ jobs:
         id: closepullrequest
         uses: Azure/static-web-apps-deploy@v1
         with:
-<<<<<<<< HEAD:.github/workflows/azure-static-web-apps-lemon-bush-0fd669800.yml
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_LEMON_BUSH_0FD669800 }}
           action: "close"
-
-#endofile
-#a
-========
-          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_GENTLE_MOSS_0D6654900 }}
-          action: "close"
->>>>>>>> Staging:.github/workflows/azure-static-web-apps-gentle-moss-0d6654900.yml
